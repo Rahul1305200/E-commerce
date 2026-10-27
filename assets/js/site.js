@@ -1,4 +1,6 @@
 const SITE_ROOT = (() => {
+  const script = document.currentScript && document.currentScript.src;
+  if (window.location.protocol !== 'file:' && script) return new URL('../../', script).href;
   if (window.location.protocol !== 'file:') return `${window.location.origin}/`;
   const path = decodeURIComponent(window.location.pathname.replace(/\\/g, '/'));
   const marker = '/standalone-site/';
