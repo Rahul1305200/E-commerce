@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Checkout — MyHairSkins</title><link rel="icon" href="../assets/images/logo.svg"><link rel="stylesheet" href="../assets/css/site.css"><link rel="stylesheet" href="../assets/css/checkout.css"></head>
+<body>
+<div data-site-header></div>
+<main id="main" class="checkout-page">
+  <div class="checkout-shell">
+    <nav class="checkout-progress" aria-label="Checkout progress"><a href="/cart/index.html">Cart</a><span aria-current="step">Checkout</span><span>Order Confirmed</span></nav>
+    <form id="checkout-form" class="checkout-card" data-demo-form>
+      <section class="checkout-section">
+        <h1>Shipping Information</h1>
+        <div class="checkout-fields">
+          <div class="field field--full"><label for="checkout-email">Email *</label><input id="checkout-email" name="email" type="email" placeholder="Email *" autocomplete="email" required></div>
+          <div class="field"><label for="checkout-first">First name *</label><input id="checkout-first" name="first_name" placeholder="First name *" autocomplete="given-name" required></div>
+          <div class="field"><label for="checkout-last">Last name *</label><input id="checkout-last" name="last_name" placeholder="Last name *" autocomplete="family-name" required></div>
+          <div class="field field--full"><label for="shipping-address">Street address *</label><input id="shipping-address" name="shipping_address_1" placeholder="Street address *" autocomplete="shipping street-address" required></div>
+          <button class="checkout-text-button" type="button" data-apartment-toggle aria-expanded="false">+ Add Apartment, suite, unit etc</button>
+          <div class="field field--full checkout-apartment" data-apartment-field hidden><label for="shipping-address-2">Apartment, suite, unit etc (optional)</label><input id="shipping-address-2" name="shipping_address_2" placeholder="Apartment, suite, unit etc" autocomplete="shipping address-line2"></div>
+          <div class="field"><label for="shipping-city">Town / City *</label><input id="shipping-city" name="shipping_city" placeholder="Town / City *" autocomplete="shipping address-level2" required></div>
+          <div class="field"><label for="shipping-postcode">Postcode *</label><input id="shipping-postcode" name="shipping_postcode" placeholder="Postcode *" autocomplete="shipping postal-code" required></div>
+          <div class="field"><label for="shipping-country">Country</label><select id="shipping-country" name="shipping_country" autocomplete="shipping country"><option value="US">United States (US)</option></select></div>
+          <div class="field"><label for="shipping-state">State (optional)</label><select id="shipping-state" name="shipping_state" autocomplete="shipping address-level1" data-us-states data-default="CA"></select></div>
+        </div>
+        <label class="checkout-check"><input type="checkbox" data-billing-toggle>Use a different billing address <span class="field-optional">(optional)</span></label>
+        <div class="checkout-fields checkout-billing" data-billing-fields hidden>
+          <div class="field field--full"><label for="billing-address">Street address *</label><input id="billing-address" name="billing_address_1" placeholder="Street address *" autocomplete="billing street-address"></div>
+          <div class="field field--full"><label for="billing-address-2">Apartment, suite, unit etc (optional)</label><input id="billing-address-2" name="billing_address_2" placeholder="Apartment, suite, unit etc" autocomplete="billing address-line2"></div>
+          <div class="field"><label for="billing-city">Town / City *</label><input id="billing-city" name="billing_city" placeholder="Town / City *" autocomplete="billing address-level2"></div>
+          <div class="field"><label for="billing-postcode">Postcode *</label><input id="billing-postcode" name="billing_postcode" placeholder="Postcode *" autocomplete="billing postal-code"></div>
+          <div class="field"><label for="billing-country">Country</label><select id="billing-country" name="billing_country" autocomplete="billing country"><option value="US">United States (US)</option></select></div>
+          <div class="field"><label for="billing-state">State (optional)</label><select id="billing-state" name="billing_state" autocomplete="billing address-level1" data-us-states></select></div>
+        </div>
+        <div class="field checkout-phone"><label for="checkout-phone">Phone (optional)</label><div class="checkout-phone-input"><span>🇺🇸 +1</span><input id="checkout-phone" name="phone" type="tel" placeholder="Phone" autocomplete="tel"></div></div>
+      </section>
+      <section class="checkout-section checkout-shipping"><h2>Shipping Method</h2><p>Shipping method</p><label class="checkout-choice"><input type="radio" name="shipping_method" checked><span>UsPs Standard Ground Delivery within 7 days</span><strong>Free</strong></label></section>
+      <section class="checkout-section checkout-order"><h2>Order Summary</h2><button class="checkout-text-button" type="button" data-coupon-toggle aria-expanded="false">Have a coupon? Click here to enter your code</button><div class="checkout-coupon" data-coupon-panel hidden><label for="coupon-code">Coupon code</label><div><input id="coupon-code" name="coupon_code" placeholder="Coupon code"><button type="button" data-coupon-apply>Apply</button></div><p class="notice" role="status">Coupon codes are unavailable in this standalone preview.</p></div><div data-checkout-items></div><div class="summary-line"><span>Subtotal</span><strong data-cart-total>$0.00</strong></div><div class="summary-line"><span>Shipping</span><strong>Free</strong></div><div class="summary-line summary-total"><span>Total</span><strong data-cart-total>$0.00</strong></div></section>
+      <p class="checkout-privacy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="/privacy-policy/index.html">privacy policy</a>.</p>
+      <section class="checkout-payment" aria-label="Credit Card"><div class="checkout-payment-head"><strong>Credit Card</strong><img src="../assets/images/footer-payments.webp" alt="Accepted card brands"></div><div class="checkout-fields"><div class="field field--full"><label for="card-number">Card number</label><input id="card-number" placeholder="Card number *" autocomplete="off" inputmode="numeric" maxlength="19"></div><div class="field"><label for="card-expiry">Expiry date</label><input id="card-expiry" placeholder="MM/YY *" autocomplete="off" inputmode="numeric" maxlength="5"></div><div class="field"><label for="card-cvv">CVV</label><input id="card-cvv" placeholder="CVV *" autocomplete="off" inputmode="numeric" maxlength="4"></div></div><p>Preview only. Card details and orders are not processed.</p></section>
+      <label class="checkout-agreement"><input type="checkbox" required><span>I am 18 years or older and agree to the <a href="/terms-conditions/index.html">Terms and Conditions</a> and <a href="/privacy-policy/index.html">Privacy Policy</a> explaining that by placing an order, product delivery is free (free S&amp;H). You will not be enrolled in any type of continuity program by ordering said option from this website. Delivery is via USPS and takes up to 7 business days from the order processing date. <strong>*</strong></span></label>
+      <button class="button checkout-submit" type="submit">Place Order Now <span data-place-total>$0.00</span></button>
+      <p class="notice" role="status">This standalone preview has not placed an order or charged a payment method.</p>
+      <p class="checkout-help">The charges will appear on your billing statement as cloudadservicesmyhairs. For any question concerning your order or a question concerning one of our products, contact customer service at <a href="mailto:support@myhairskin.local">support@myhairskin.local</a> or through our <a href="/contact/index.html">contact form</a>. We’re open Monday to Saturday, 9am–7pm EST. You can also visit our <a href="/ingredients/index.html">Ingredients</a> page for more details.</p>
+    </form>
+  </div>
+</main>
+<div data-site-footer></div>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

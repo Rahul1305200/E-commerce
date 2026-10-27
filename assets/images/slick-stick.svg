@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-labelledby="title desc">
+  <title id="title">Strong Hold Hair Slick Stick</title>
+  <desc id="desc">Minimal illustration of a hair styling stick and wand.</desc>
+  <rect width="720" height="840" fill="#eef0e7"/>
+  <ellipse cx="360" cy="720" rx="210" ry="34" fill="#d9ddd0"/>
+  <g transform="translate(170 120)">
+    <rect x="45" y="150" width="150" height="460" rx="24" fill="#8a5a3b"/>
+    <rect x="60" y="180" width="120" height="245" rx="6" fill="#f8f5ec"/>
+    <text x="120" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#263129">MYHAIRSKINS</text>
+    <text x="120" y="284" text-anchor="middle" font-family="Georgia,serif" font-size="25" fill="#263129">Strong Hold</text>
+    <text x="120" y="316" text-anchor="middle" font-family="Georgia,serif" font-size="25" fill="#263129">Slick Stick</text>
+    <rect x="48" y="108" width="144" height="64" rx="10" fill="#263129"/>
+    <g transform="translate(245 0)">
+      <rect x="55" y="310" width="110" height="300" rx="22" fill="#263129"/>
+      <rect x="101" y="55" width="18" height="280" fill="#263129"/>
+      <rect x="78" y="5" width="64" height="110" rx="28" fill="#263129"/>
+      <path d="M74 28h72M72 42h76M72 56h76M74 70h72M78 84h64" stroke="#eef0e7" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

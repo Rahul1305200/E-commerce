@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Sample product label</title>
+  <desc id="desc">A demonstration label with sample ingredients, directions, warnings, and storage headings.</desc>
+  <rect width="800" height="800" fill="#eeeee8"/>
+  <rect x="115" y="72" width="570" height="656" rx="5" fill="#fffefa" stroke="#2b322b" stroke-width="3"/>
+  <text x="152" y="143" fill="#263129" font-family="Arial,sans-serif" font-size="35" font-weight="700">SAMPLE PRODUCT LABEL</text>
+  <text x="152" y="186" fill="#5d685e" font-family="Arial,sans-serif" font-size="20">For layout demonstration only</text>
+  <path d="M152 219h496" stroke="#263129" stroke-width="15"/>
+  <text x="152" y="282" fill="#263129" font-family="Arial,sans-serif" font-size="26" font-weight="700">Ingredients</text>
+  <text x="152" y="315" fill="#5d685e" font-family="Arial,sans-serif" font-size="17">See the product details for the live-site list.</text>
+  <path d="M152 343h496" stroke="#d1d6cd" stroke-width="2"/>
+  <text x="152" y="397" fill="#263129" font-family="Arial,sans-serif" font-size="26" font-weight="700">Directions</text>
+  <path d="M152 426h496M152 447h464M152 468h410" stroke="#c3cbc0" stroke-width="7" stroke-linecap="round"/>
+  <text x="152" y="531" fill="#263129" font-family="Arial,sans-serif" font-size="26" font-weight="700">Warnings</text>
+  <path d="M152 559h496M152 580h450" stroke="#c3cbc0" stroke-width="7" stroke-linecap="round"/>
+  <text x="152" y="645" fill="#263129" font-family="Arial,sans-serif" font-size="26" font-weight="700">Storage</text>
+  <path d="M152 675h390" stroke="#c3cbc0" stroke-width="7" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,55 @@
+.product-page-body { padding-top: 42px; padding-bottom: 90px; background: var(--white); }
+.product-detail { grid-template-columns: minmax(0, 1.07fr) minmax(0, .93fr); gap: 48px; align-items: start; }
+.product-gallery { min-width: 0; }
+.product-gallery-stage { position: relative; aspect-ratio: 1; overflow: hidden; border: 1px solid var(--line); background: #eef0e7; }
+.product-gallery-panel, .product-gallery-panel img { width: 100%; height: 100%; }
+.product-gallery-panel[hidden] { display: none; }
+.product-gallery-panel img { object-fit: cover; }
+.product-gallery-panel .product-art { height: 100%; aspect-ratio: auto; }
+.product-gallery-panel .product-art .pack { transform: scale(1.45); }
+.gallery-zoom { position: absolute; top: 16px; right: 16px; display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 50%; background: var(--white); color: var(--ink); }
+.gallery-zoom svg { width: 19px; height: 19px; }
+.product-gallery-thumbs { display: flex; gap: 12px; margin-top: 14px; }
+.product-gallery-thumbs button { width: 88px; height: 88px; padding: 0; overflow: hidden; border: 1px solid var(--line); background: #eef0e7; }
+.product-gallery-thumbs button[aria-pressed="true"] { border: 2px solid var(--ink); }
+.product-gallery-thumbs img, .product-gallery-thumbs .product-art { width: 100%; height: 100%; object-fit: cover; aspect-ratio: auto; }
+.product-gallery-thumbs .pack { transform: scale(.5); }
+.product-detail-copy { padding-top: 2px; }
+.product-detail-copy .kicker { margin-bottom: 13px; }
+.product-detail-copy h1 { font-size: clamp(38px, 4vw, 55px); line-height: 1.02; }
+.product-detail-copy .price-large { margin: 22px 0 27px; color: var(--clay); font: 700 29px/1.2 var(--sans); }
+.price-large small { font-size: 13px; letter-spacing: .08em; }
+.product-detail-copy .quantity-row { align-items: flex-end; margin: 0 0 18px; }
+.product-detail-copy .quantity-row .field > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.product-detail-copy .quantity-row input, .product-detail-copy .quantity-row .button { min-height: 56px; }
+.product-detail-copy .quantity-row .button { flex: 1; }
+.product-payment { padding: 13px 15px; border: 1px solid var(--line); width: fit-content; margin: 0 0 20px; background: #fff; }
+.product-payment img { width: 168px; height: auto; }
+.product-shipping { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 18px; margin-bottom: 22px; border-radius: 4px; background: var(--olive); color: white; font-size: 14px; }
+.product-shipping svg { width: 24px; height: 24px; flex: 0 0 auto; }
+.product-description p { margin: 0 0 16px; color: #445047; line-height: 1.65; }
+.product-description h2 { margin: 30px 0 13px; font-size: 28px; }
+.product-description .product-ingredients { line-height: 1.7; }
+.product-net { margin: 20px 0 0; font-weight: 700; }
+.product-attributes { margin: 20px 0 0; padding: 0; list-style: none; }
+.product-attributes li { padding: 7px 0; border-bottom: 1px solid var(--line); color: #445047; }
+.product-related { padding: 70px 0 84px; border-top: 1px solid var(--line); background: var(--paper); }
+.product-related .kicker { margin-bottom: 12px; }
+.product-related h2 { margin-bottom: 30px; }
+.product-related .button { display: flex; width: fit-content; margin: 42px auto 0; }
+.product-related .product-name { min-height: 56px; }
+.product-lightbox { width: min(780px, calc(100vw - 28px)); max-height: calc(100vh - 28px); padding: 0; border: 0; background: var(--white); }
+.product-lightbox::backdrop { background: rgba(19,27,21,.8); }
+.product-lightbox-content { width: 100%; max-height: calc(100vh - 28px); object-fit: contain; }
+.product-lightbox .product-art { aspect-ratio: 1; }
+.product-lightbox-close { position: absolute; top: 12px; right: 12px; z-index: 1; width: 38px; height: 38px; border: 0; border-radius: 50%; background: var(--white); font-size: 25px; }
+@media (max-width: 860px) {
+  .product-detail { grid-template-columns: 1fr; gap: 36px; }
+  .product-gallery-stage { max-height: 720px; }
+}
+@media (max-width: 540px) {
+  .product-page-body { padding-top: 20px; padding-bottom: 65px; }
+  .product-gallery-thumbs button { width: 72px; height: 72px; }
+  .product-detail-copy h1 { font-size: 39px; }
+  .product-related { padding: 54px 0 65px; }
+}
